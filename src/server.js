@@ -25,6 +25,10 @@ app.use((req, res, next) => {
   next();
 });
 
+app.get('', async (req, res) => {
+  res.status(200).json();
+})
+
 app.post('/chat', async (req, res) => {
   const messages = req.body.messages;
 
