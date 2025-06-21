@@ -14,7 +14,7 @@ const AUTH_TOKEN = process.env.AUTH_TOKEN; // <-- Set this in .env
 // Enable CORS for your specific domain
 app.use(
   cors({
-    origin: ALLOWED_ORIGIN,
+    origin: "*",
   })
 );
 
